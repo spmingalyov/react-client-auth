@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-client-auth/static/css/main.295b8026.css",
-    "main.js": "/react-client-auth/static/js/main.abe00808.js",
+    "main.js": "/react-client-auth/static/js/main.514c1e93.js",
     "static/js/260.ad1bebbb.chunk.js": "/react-client-auth/static/js/260.ad1bebbb.chunk.js",
     "static/js/771.4bebc218.chunk.js": "/react-client-auth/static/js/771.4bebc218.chunk.js",
     "static/js/70.43d8f964.chunk.js": "/react-client-auth/static/js/70.43d8f964.chunk.js",
@@ -10,7 +10,7 @@
     "static/media/logo.svg": "/react-client-auth/static/media/logo.f2ea07ed2b29bccde38f3e73f512c865.svg",
     "index.html": "/react-client-auth/index.html",
     "main.295b8026.css.map": "/react-client-auth/static/css/main.295b8026.css.map",
-    "main.abe00808.js.map": "/react-client-auth/static/js/main.abe00808.js.map",
+    "main.514c1e93.js.map": "/react-client-auth/static/js/main.514c1e93.js.map",
     "260.ad1bebbb.chunk.js.map": "/react-client-auth/static/js/260.ad1bebbb.chunk.js.map",
     "771.4bebc218.chunk.js.map": "/react-client-auth/static/js/771.4bebc218.chunk.js.map",
     "70.43d8f964.chunk.js.map": "/react-client-auth/static/js/70.43d8f964.chunk.js.map",
@@ -19,6 +19,6 @@
   },
   "entrypoints": [
     "static/css/main.295b8026.css",
-    "static/js/main.abe00808.js"
+    "static/js/main.514c1e93.js"
   ]
 }
