@@ -15,9 +15,9 @@ const initialState: IUserState = {
 export const login = createAsyncThunk(
 	'user/login',
 	async (userCredentials: IUserCredentials) => {
-		const response = await fetch('http://localhost:3000/users.json').then(
-			response => response.json()
-		)
+		const response = await fetch(
+			'http://localhost:3000/react-client-auth/users.json'
+		).then(response => response.json())
 
 		const currentUser = response.findIndex(
 			(user: IUserCredentials) =>
@@ -38,9 +38,9 @@ export const login = createAsyncThunk(
 export const registration = createAsyncThunk(
 	'user/registration',
 	async (userCredentials: IRegistrationCred) => {
-		const response = await fetch('http://localhost:3000/users.json').then(
-			response => response.json()
-		)
+		const response = await fetch(
+			'http://localhost:3000/react-client-auth/users.json'
+		).then(response => response.json())
 
 		const currentUser = response.findIndex(
 			(user: IUserCredentials) => user.email === userCredentials.email
