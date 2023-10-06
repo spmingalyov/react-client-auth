@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-client-auth/static/css/main.295b8026.css",
+    "main.js": "/react-client-auth/static/js/main.9eca7b5d.js",
+    "static/js/260.ad1bebbb.chunk.js": "/react-client-auth/static/js/260.ad1bebbb.chunk.js",
+    "static/js/771.4bebc218.chunk.js": "/react-client-auth/static/js/771.4bebc218.chunk.js",
+    "static/js/70.43d8f964.chunk.js": "/react-client-auth/static/js/70.43d8f964.chunk.js",
+    "static/js/776.6a13bdf5.chunk.js": "/react-client-auth/static/js/776.6a13bdf5.chunk.js",
+    "static/js/692.a2f89944.chunk.js": "/react-client-auth/static/js/692.a2f89944.chunk.js",
+    "static/media/logo.svg": "/react-client-auth/static/media/logo.f2ea07ed2b29bccde38f3e73f512c865.svg",
+    "index.html": "/react-client-auth/index.html",
+    "main.295b8026.css.map": "/react-client-auth/static/css/main.295b8026.css.map",
+    "main.9eca7b5d.js.map": "/react-client-auth/static/js/main.9eca7b5d.js.map",
+    "260.ad1bebbb.chunk.js.map": "/react-client-auth/static/js/260.ad1bebbb.chunk.js.map",
+    "771.4bebc218.chunk.js.map": "/react-client-auth/static/js/771.4bebc218.chunk.js.map",
+    "70.43d8f964.chunk.js.map": "/react-client-auth/static/js/70.43d8f964.chunk.js.map",
+    "776.6a13bdf5.chunk.js.map": "/react-client-auth/static/js/776.6a13bdf5.chunk.js.map",
+    "692.a2f89944.chunk.js.map": "/react-client-auth/static/js/692.a2f89944.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.295b8026.css",
+    "static/js/main.9eca7b5d.js"
+  ]
+}
