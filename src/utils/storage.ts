@@ -1,7 +1,7 @@
 export const getLocalStorage = (key: string) => {
 	const storage = localStorage.getItem(key)
 
-	if (storage !== null) {
+	if (storage) {
 		return JSON.parse(storage)
 	}
 
