@@ -1,9 +1,9 @@
 import { FC, useState } from 'react'
-import { Link } from 'react-router-dom'
 
+import AuthSwitch from '@components/auth-switch'
 import ErrorMessage from '@components/error-message'
+import Submit from '@components/submit-button'
 
-import { push } from '@store/push/pushSlice'
 import { login } from '@store/user/userSlice'
 
 import { useAppDispatch, useAppSelector } from '@hooks/redux'
@@ -12,7 +12,7 @@ const LoginForm: FC = () => {
 	const [email, setEmail] = useState<string>('')
 	const [password, setPassword] = useState<string>('')
 
-	const { isLoading, isError } = useAppSelector(state => state.user)
+	const { isError } = useAppSelector(state => state.user)
 
 	const dispatch = useAppDispatch()
 
@@ -47,18 +47,8 @@ const LoginForm: FC = () => {
 					value={password}
 					onChange={e => setPassword(e.target.value)}
 				/>
-				<button
-					className='bg-primary border-none w-full mt-2'
-					type='submit'
-					onClick={() => dispatch(push())}
-					disabled={isLoading}
-				>
-					Войти
-				</button>
-				<span className='flex gap-2'>
-					Нет аккаунта?
-					<Link to='/registration?'>Зарегистрироватьвся</Link>
-				</span>
+				<Submit typeAuth='login' />
+				<AuthSwitch />
 			</form>
 
 			{isError && <ErrorMessage />}

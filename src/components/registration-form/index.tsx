@@ -1,7 +1,8 @@
 import { FC, useState } from 'react'
-import { Link } from 'react-router-dom'
 
+import AuthSwitch from '@components/auth-switch'
 import ErrorMessage from '@components/error-message'
+import Submit from '@components/submit-button'
 
 import { registration } from '@store/user/userSlice'
 
@@ -13,7 +14,7 @@ const RegistrationForm: FC = () => {
 	const [password, setPassword] = useState<string>('')
 	const [checkPassword, setCheckPassword] = useState<string>('')
 
-	const { isLoading, isError } = useAppSelector(state => state.user)
+	const { isError } = useAppSelector(state => state.user)
 
 	const dispatch = useAppDispatch()
 
@@ -65,18 +66,8 @@ const RegistrationForm: FC = () => {
 					value={checkPassword}
 					onChange={e => setCheckPassword(e.target.value)}
 				/>
-				<button
-					className='bg-primary border-none w-full mt-2'
-					type='submit'
-					onClick={() => {}}
-					disabled={isLoading}
-				>
-					Зарегистрироватьвся
-				</button>
-				<span className='flex gap-2'>
-					Уже есть аккаунт?
-					<Link to='/login?'>Войти</Link>
-				</span>
+				<Submit typeAuth='registration' />
+				<AuthSwitch />
 			</form>
 			{isError && <ErrorMessage />}
 		</div>

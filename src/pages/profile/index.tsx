@@ -1,6 +1,8 @@
 import { FC } from 'react'
 import { BiUserCircle } from 'react-icons/bi'
 
+import Push from '@components/push'
+
 import { setDelivered } from '@store/push/pushSlice'
 
 import { withAuthProvider } from '@helpers/auth'
@@ -18,16 +20,10 @@ const ProfilePage: FC = () => {
 
 	return (
 		<>
-			<div className='absolute top-6'>
-				{isPush && (
-					<div className='mt-5 p-5 bg-green-500 rounded-lg  top-6 opacity-0 ease-in-out animate-push'>
-						Вы успешно авторизовались!
-					</div>
-				)}
-			</div>
+			<div className='absolute top-6'>{isPush && <Push />}</div>
 
 			<div className='p-5 bg-secondary inline-flex flex-col gap-3 rounded-xl items-center w-96 h-96'>
-				<div>Привет, {user?.name}!</div>
+				<div className='font-bold'>Привет, {user?.name}!</div>
 				<BiUserCircle className='text-8xl' />
 				<div>Username: {user?.username}</div>
 				<div>Email: {user?.email}</div>
