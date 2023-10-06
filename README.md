@@ -1,7 +1,7 @@
 To run project :
 
-### `git clone https://github.com/spmingalyov/react-client-auth.git`
+ ```git clone https://github.com/spmingalyov/react-client-auth.git```
 
-### `yarn`
+```yarn```
 
-### `yarn dev`
+```yarn dev```
